@@ -17,4 +17,10 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {
+  licenseBadge: renderLicenseBadge,
+  licenseLink: renderLicenseLink,
+  licenseSection: renderLicenseSection,
+  generateMarkdown: generateMarkdown,
+
+}
