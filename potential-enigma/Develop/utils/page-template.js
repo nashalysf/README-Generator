@@ -1,6 +1,7 @@
-
-    # README-Generator 
-   Short description of the project.
+const writeToFile = (fileName, data) => {
+    return `
+    # ${fileName} 
+   ${data}
    ## Table of Contents
    - [Installation](#installation)
    - [Usage](#usage)
@@ -10,15 +11,18 @@
    - [Test](#test)
    - [Contact](#contact)
    ### Installation
-   Short description of the project.
+   ${data}
    ### Usage
-   Short description of the project.
+   ${data}
    ### License
-   Short description of the project.
+   ${data}
    ### Contributions
-   Short description of the project.
+   ${data}
    ### Test
-   Short description of the project.
+   ${data}
    ### Contact
-   Short description of the project.
-    
+   ${data}
+    `
+      };
+
+      module.exports = writeToFile;
