@@ -1,24 +1,35 @@
 
-    # README-Generator 
-   Short description of the project.
+  # ReadMe File Generator 
+   - MIT
+   - Is a quick and professional ReadMe File Generator where it builds a markdown file based on the user responses and adds them to a built template.
+   
    ## Table of Contents
+   - [Languages](#laguages)
    - [Installation](#installation)
    - [Usage](#usage)
-   - [Credits](#credits)
-   - [License](#license)
-   - [Contribution](#contribution)
    - [Test](#test)
+   - [Contribution](#contribution)
    - [Contact](#contact)
-   ### Installation
-   Short description of the project.
-   ### Usage
-   Short description of the project.
-   ### License
-   Short description of the project.
-   ### Contributions
-   Short description of the project.
-   ### Test
-   Short description of the project.
-   ### Contact
-   Short description of the project.
+   - [Images](#Images)
+
+   ## Languages
+   JavaScript, ES6, Node
+
+   ## Installation
+   Clone the code to your own local machine and run it from there.
+
+   ## Usage
+   Type in the command-line 'node index' and answer the prompts.
+
+   ## Test
+   Clone the code to your local machine and answer the questions. If a required question is left blank the prompt will appear again with instructions to answer the question.
+
+   ## Contributions
+   Optimazation is key, anyone can contribute in order to make the code more user friendly and optimal.
+
+   ## Contact
+   * Email: nashalysf@gmail.com
+   
+   ## Images
+   [imagesmockup]
     
