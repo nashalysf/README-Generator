@@ -31,5 +31,5 @@
    * Email: nashalysf@gmail.com
    
    ## Images
-   ![Tester Video](https://watch.screencastify.com/v/5aAP3gucsWPQYTGfeVSk "Tester Video")
+   * [Tester Video](https://watch.screencastify.com/v/5aAP3gucsWPQYTGfeVSk "Tester Video")
     
