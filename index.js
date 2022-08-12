@@ -1,14 +1,14 @@
 // packages needed for this application
 const inquirer = require("inquirer");
 const fs = require('fs');
-const generatePage = require("./src/generateMarkdown");
-const writeToFile = require('./src/page-template');
+// const writeToFile = require("./src/generateMarkdown");
+const generatePage = require('./src/page-template');
 //
-const userInput = process.argv.slice(2, process.argv.length);
-const [title, data] = userInput;
-const printInputData = (readDataArgs) => {
-  readDataArgs.forEach((promptResponse) => console.log(promptResponse));
-};
+// const userInput = process.argv.slice(2, process.argv.length);
+// const [title, data] = userInput;
+// const printInputData = (readDataArgs) => {
+//   readDataArgs.forEach((promptResponse) => console.log(promptResponse));
+// };
 
 // array of questions for user input
 const promptUser = () => {
@@ -79,10 +79,18 @@ const promptUser = () => {
         }
       }
     },
-    {
-      type: "input",
+    { 
+      type: "list",
       name: "license",
-      message: "Does it contain a Liscense?",
+      message: "Which Liscense?",
+      choices: [
+        "MIT",
+        "Apache",
+        "GPL",
+        "BSD-2",
+        "BSD-3",
+        "BSD-4",
+      ]
     },
     {
       type: "input",
@@ -106,12 +114,6 @@ const promptUser = () => {
       type: "input",
       name: "contact",
       message: "For more questions, how can one contact you?",
-    },
-    {
-      type: "confirm",
-      name: "feature",
-      message: "Would you like to feature this project?",
-      default: false,
     },
     {
       type: "confirm",
@@ -146,18 +148,12 @@ const promptUser = () => {
   ]);
 };
 
-promptUser().then((answers)=> console.log(answers));
+promptUser().then((answers)=> {
+  const README = generatePage(answers);
+ fs.writeFile("README.md", README,(err) => {
+    if (err) throw err;
+    console.log('README file has been created. Check it out!');
+  });
+ });
 
-// TODO: Create a function to write README file
-// fs.writeFile( "README.md", writeToFile(title, data),(err) => {
-//     if (err) throw err;
-//     console.log('README file has been created. Check it out!');
-//   });
-// console.log(writeToFile(title, data));
-printInputData(userInput);
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
+// printInputData(userInput);
