@@ -25,11 +25,11 @@
    Clone the code to your local machine and answer the questions. If a required question is left blank the prompt will appear again with instructions to answer the question.
 
    ## Contributions
-   Optimazation is key, anyone can contribute in order to make the code more user friendly and optimal.
+   Optimization  is key, anyone can contribute in order to make the code more user friendly and optimal.
 
    ## Contact
    * Email: nashalysf@gmail.com
    
    ## Images
-   [imagesmockup]
+   [![Tester Video]]({https://watch.screencastify.com/v/5aAP3gucsWPQYTGfeVSk} "Tester Video")
     
